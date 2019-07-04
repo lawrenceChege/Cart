@@ -10,25 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'Pagecontroller@home');
+Route::get('/about', 'Pagecontroller@about');
+Route::get('/contact', 'Pagecontroller@contact');
+Route::get('/signup', 'Pagecontroller@signup');
+Route::get('/login', 'Pagecontroller@login');
 
-Route::get('/', function () {
-    $tasks = [
-        'Go Home',
-        'Eat ',
-        'Sit ',
-        'Dine'
-
-    ];
-    return view('welcome', [
-        'tasks' => $tasks,
-        'title' => 'brother'
-    ]);
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});

@@ -9,59 +9,72 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
 
-            .full-height {
-                height: 100vh;
-            }
+.full-height {
+    height: 100vh;
+}
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
-            .position-ref {
-                position: relative;
-            }
+.position-ref {
+    position: relative;
+}
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
 
-            .content {
-                text-align: center;
-            }
+.content {
+    text-align: center;
+}
 
-            .title {
-                font-size: 84px;
-            }
+.title {
+    font-size: 84px;
+}
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
+.m-b-md {
+    margin-bottom: 30px;
+}
+input:valid + .invalid{
+visibility: hidden;
+}
+input:invalid + .invalid{
+visibility: visible;
+}
+input:required {
+border-bottom: 2px solid #c33;
+}
+input:valid {
+border-bottom: 2px solid green;
+}
+.invalid {
+color: #999;
+}
         </style>
     </head>
     <body>
@@ -85,12 +98,11 @@
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/">Home</a>
                     <a href="/contact">Contact us</a>
                     <a href="/about">About us</a>
+                    <a href="/signup">Sign Up</a>
+                    <a href="/login">login</a>
                 </div>
                 <div>
                 @yield('content')
