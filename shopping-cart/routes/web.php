@@ -15,4 +15,5 @@ Route::get('/about', 'Pagecontroller@about');
 Route::get('/contact', 'Pagecontroller@contact');
 Route::get('/signup', 'Pagecontroller@signup');
 Route::get('/login', 'Pagecontroller@login');
+Route::get('/products', 'ProductsController@index');
 
